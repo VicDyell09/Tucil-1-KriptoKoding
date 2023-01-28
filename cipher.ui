@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>109</y>
+      <width>716</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>691</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_4">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_5">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_6">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_7">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_8">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_9">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_10">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_9">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>143</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>203</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_11">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_12">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_13">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_14">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_15">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_10">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_16">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_17">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_18">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>203</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_19">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>143</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_20">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>691</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_12">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_21">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_22">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_23">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_24">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_25">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_13">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_26">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_27">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_28">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_29">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_30">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_15">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>143</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>203</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_31">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_32">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_33">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_34">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_35">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_15">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_16">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Key</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_36">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_37">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>195</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_38">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>203</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_39">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>143</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>37</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_40">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>85</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_16">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>691</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_17">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_18">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>180</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_41">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_42">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_43">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_44">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_19">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_45">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>180</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_46">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_47">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_48">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_20">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_21">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_49">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_42">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_50">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_51">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_52">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_22">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_56">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_43">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_54">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_53">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_44">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_55">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_45">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>691</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_23">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_12">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_24">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QLabel" name="label_46">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_47">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>180</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_48">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_57">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_58">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_59">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_60">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_25">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_61">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_49">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_50">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>120</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_51">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>180</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_62">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_63">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_64">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_26">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_13">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>601</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_27">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_65">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_52">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Nama File</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_53">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_54">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_66">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_67">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_68">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_28">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QPlainTextEdit" name="plainTextEdit_69">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>40</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_55">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Teks Asli</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_70">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>240</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_71">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>180</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_56">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Plaintext</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>150</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Execute</string>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="plainTextEdit_72">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>110</y>
+            <width>331</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_57">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ciphertext</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>531</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka Small</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cipher Encrypt and Decrypt</string>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
