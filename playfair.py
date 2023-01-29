@@ -69,7 +69,7 @@ def playfairenk(bigram,mat):
     return textenkrip
 
 #fungi dekripsi playfair
-def playfairenk(bigram,mat):
+def playfairdek(bigram,mat):
     textdekrip = ""
     for i in range (0,len(bigram)):
         pos1 = search((bigram[i])[0],mat)
@@ -115,7 +115,7 @@ key = removej(key) #formating key
 text = removej(text) #fromating plain text
 bigram = tobigram(text) #plain textr ke bigram
 mat = (matrix(key)) #key jadi marix 5x5
-textdekrip = playfairenk(bigram,mat) #enkripsi
+textdekrip = playfairdek(bigram,mat) #enkripsi
 textdekripf5 = [textdekrip[i:i+5] for i in range(0, len(textdekrip), 5)]
 print()
 print("------ Playfair Square -------")
