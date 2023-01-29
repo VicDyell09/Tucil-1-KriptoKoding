@@ -7,7 +7,7 @@ def removej(key):
 
 #fungsi key jadi matrix 5x5
 def matrix(key):
-    key = key + alfabet
+    key = key + "abcdefghiklmnopqrstuvwxyz"
     key = "".join(dict.fromkeys(key).keys())   
     matrix = []
     for i in range (5):
@@ -68,8 +68,28 @@ def playfairenk(bigram,mat):
         textenkrip += mat[result2[0]][result2[1]]
     return textenkrip
 
-#----main-------
-alfabet = "abcdefghiklmnopqrstuvwxyz"
+#fungi dekripsi playfair
+def playfairenk(bigram,mat):
+    textdekrip = ""
+    for i in range (0,len(bigram)):
+        pos1 = search((bigram[i])[0],mat)
+        pos2 = search((bigram[i])[1],mat)
+        result1 = ""
+        result2 = ""
+        if pos1[0]==pos2[0]:
+            result1 = [pos1[0],(pos1[1]+4)%5] 
+            result2 = [pos2[0],(pos2[1]+4)%5] 
+        elif pos1[1] == pos2[1]:
+            result1 = [(pos1[0]+4)%5,pos1[1]] 
+            result2 = [(pos2[0]+4)%5,pos2[1]]
+        else:
+            result1 = [pos1[0],pos2[1]] 
+            result2 = [pos2[0],pos1[1]] 
+        textdekrip += mat[result1[0]][result1[1]]
+        textdekrip += mat[result2[0]][result2[1]]
+    return textdekrip
+
+#----main------- enkripsi
 key = input("Enter Your Key : ") # input key
 text = input("Enter Your Text : ")
 key = removej(key) #formating key
@@ -77,6 +97,7 @@ text = removej(text) #fromating plain text
 bigram = tobigram(text) #plain textr ke bigram
 mat = (matrix(key)) #key jadi marix 5x5
 textenkrip = playfairenk(bigram,mat) #enkripsi
+textenkripf5 = [textenkrip[i:i+5] for i in range(0, len(textenkrip), 5)]
 print()
 print("------ Playfair Square -------")
 for i in range(5):
@@ -85,3 +106,23 @@ print("------------------------------")
 print()
 print("Hasil pemisahan per 2 huruf : ",bigram) # print text per 2 huruf
 print("Hasil enkripsi : ",textenkrip) #print hasil enkripsi
+print("Hasil enkripsi per 5 huruf : ",textenkripf5) #print hasil enkripsi
+
+#----main------- dekripsi
+key = input("Enter Your Key : ") # input key
+text = input("Enter Your Text : ")
+key = removej(key) #formating key
+text = removej(text) #fromating plain text
+bigram = tobigram(text) #plain textr ke bigram
+mat = (matrix(key)) #key jadi marix 5x5
+textdekrip = playfairenk(bigram,mat) #enkripsi
+textdekripf5 = [textdekrip[i:i+5] for i in range(0, len(textdekrip), 5)]
+print()
+print("------ Playfair Square -------")
+for i in range(5):
+    print(mat[i]) # print matrix
+print("------------------------------")
+print()
+print("Hasil pemisahan per 2 huruf : ",bigram) # print text per 2 huruf
+print("Hasil dekripsi : ",textdekrip) #print hasil enkripsi
+print("Hasil dekripsi per 5 huruf : ",textdekripf5) #print hasil enkripsi
