@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from vigenere import *
+from extendedvigenere import *
 
 
 class Ui_MainWindow(object):
@@ -232,9 +234,6 @@ class Ui_MainWindow(object):
         self.plainTextEdit_27 = QtWidgets.QPlainTextEdit(self.tab_13)
         self.plainTextEdit_27.setGeometry(QtCore.QRect(150, 195, 331, 41))
         self.plainTextEdit_27.setObjectName("plainTextEdit_27")
-        self.plainTextEdit_28 = QtWidgets.QPlainTextEdit(self.tab_13)
-        self.plainTextEdit_28.setGeometry(QtCore.QRect(150, 250, 331, 41))
-        self.plainTextEdit_28.setObjectName("plainTextEdit_28")
         self.label_23 = QtWidgets.QLabel(self.tab_13)
         self.label_23.setGeometry(QtCore.QRect(20, 150, 121, 20))
         self.label_23.setObjectName("label_23")
@@ -304,9 +303,6 @@ class Ui_MainWindow(object):
         self.plainTextEdit_37 = QtWidgets.QPlainTextEdit(self.tab_16)
         self.plainTextEdit_37.setGeometry(QtCore.QRect(150, 195, 331, 41))
         self.plainTextEdit_37.setObjectName("plainTextEdit_37")
-        self.plainTextEdit_38 = QtWidgets.QPlainTextEdit(self.tab_16)
-        self.plainTextEdit_38.setGeometry(QtCore.QRect(150, 250, 331, 41))
-        self.plainTextEdit_38.setObjectName("plainTextEdit_38")
         self.label_31 = QtWidgets.QLabel(self.tab_16)
         self.label_31.setGeometry(QtCore.QRect(20, 203, 121, 20))
         self.label_31.setObjectName("label_31")
@@ -626,6 +622,11 @@ class Ui_MainWindow(object):
         self.tabWidget_13.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.pushButton_2.clicked.connect(self.vigenerecipherencrypt)
+        self.pushButton_4.clicked.connect(self.vigenerecipherdecrypt)
+        self.pushButton_14.clicked.connect(self.extvigenerecipherencrypt)
+        self.pushButton_16.clicked.connect(self.extvigenerecipherdecrypt)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -730,6 +731,38 @@ class Ui_MainWindow(object):
         self.tabWidget_11.setTabText(self.tabWidget_11.indexOf(self.tab_26), _translate("MainWindow", "Decrypt"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "One-Time Pad"))
         self.label.setText(_translate("MainWindow", "Cipher Encrypt and Decrypt"))
+
+    def vigenerecipherencrypt(self):
+        kalimat = self.plainTextEdit_9.toPlainText()
+        key = self.plainTextEdit_10.toPlainText()
+        hasil1 = vigenereencrypttanpaspasi(kalimat, key)
+        hasil2 = vigenereencryptperlima(kalimat, key)
+        self.plainTextEdit_6.setPlainText(kalimat)
+        self.plainTextEdit_7.setPlainText(hasil1)
+        self.plainTextEdit_8.setPlainText(hasil2)
+        
+    def vigenerecipherdecrypt(self):
+        kalimat = self.plainTextEdit_19.toPlainText()
+        key = self.plainTextEdit_20.toPlainText()
+        hasil1 = vigeneredecrypttanpaspasi(kalimat, key)
+        hasil2 = vigeneredecryptperlima(kalimat, key)
+        self.plainTextEdit_16.setPlainText(kalimat)
+        self.plainTextEdit_17.setPlainText(hasil1)
+        self.plainTextEdit_18.setPlainText(hasil2)
+
+    def extvigenerecipherencrypt(self):
+        kalimat = self.plainTextEdit_29.toPlainText()
+        key = self.plainTextEdit_30.toPlainText()
+        hasil1 = extvigenereencrypt(kalimat, key)
+        self.plainTextEdit_26.setPlainText(kalimat)
+        self.plainTextEdit_27.setPlainText(hasil1)
+            
+    def extvigenerecipherdecrypt(self):
+        kalimat = self.plainTextEdit_39.toPlainText()
+        key = self.plainTextEdit_40.toPlainText()
+        hasil1 = extvigeneredecrypt(kalimat, key)
+        self.plainTextEdit_36.setPlainText(kalimat)
+        self.plainTextEdit_37.setPlainText(hasil1)
 
 
 if __name__ == "__main__":
