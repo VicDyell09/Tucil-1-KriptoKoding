@@ -777,6 +777,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_6.setPlainText(kalimat)
         self.plainTextEdit_7.setPlainText(hasil1)
         self.plainTextEdit_8.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
         
     def vigenerecipherdecrypt(self):
         kalimat = self.plainTextEdit_19.toPlainText()
@@ -786,6 +787,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_16.setPlainText(kalimat)
         self.plainTextEdit_17.setPlainText(hasil1)
         self.plainTextEdit_18.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
 
     def extvigenerecipherencrypt(self):
         kalimat = self.plainTextEdit_29.toPlainText()
@@ -793,6 +795,7 @@ class Ui_MainWindow(object):
         hasil1 = extvigenereencrypt(kalimat, key)
         self.plainTextEdit_26.setPlainText(kalimat)
         self.plainTextEdit_27.setPlainText(hasil1)
+        self.tulishasilketxt(hasil1)
             
     def extvigenerecipherdecrypt(self):
         kalimat = self.plainTextEdit_39.toPlainText()
@@ -800,6 +803,7 @@ class Ui_MainWindow(object):
         hasil1 = extvigeneredecrypt(kalimat, key)
         self.plainTextEdit_36.setPlainText(kalimat)
         self.plainTextEdit_37.setPlainText(hasil1)
+        self.tulishasilketxt(hasil1)
 
     def playfaircipherencrypt(self):
         kalimat = self.plainTextEdit_45.toPlainText()
@@ -809,6 +813,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_47.setPlainText(kalimat)
         self.plainTextEdit_48.setPlainText(hasil1)
         self.plainTextEdit_102.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
 
     def playfaircipherdecrypt(self):
         kalimat = self.plainTextEdit_53.toPlainText()
@@ -818,6 +823,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_55.setPlainText(kalimat)
         self.plainTextEdit_56.setPlainText(hasil1)
         self.plainTextEdit_104.setPlainText(hasil2)   
+        self.tulishasilketxt(hasil1)
 
     def otpcipherencrypt(self):
         kalimat = self.plainTextEdit_64.toPlainText()
@@ -826,6 +832,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_63.setPlainText(kalimat)
         self.plainTextEdit_61.setPlainText(hasil1)
         self.plainTextEdit_62.setPlainText(hasil2) 
+        self.tulishasilketxt(hasil1)
 
     def otpcipherdecrypt(self):         
         kalimat = self.plainTextEdit_69.toPlainText()
@@ -834,7 +841,13 @@ class Ui_MainWindow(object):
         self.plainTextEdit_72.setPlainText(kalimat)
         self.plainTextEdit_71.setPlainText(hasil1)
         self.plainTextEdit_70.setPlainText(hasil2) 
+        self.tulishasilketxt(hasil1)
         
+    def tulishasilketxt(self, kalimat):
+        with open("hasil.txt", "a") as f:
+            f.writelines(kalimat)
+            f.write("\n")
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
