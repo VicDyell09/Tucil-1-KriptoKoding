@@ -89,7 +89,6 @@ def vigenereencryptperlima(kalimat, key):
         hasil.append(matriks[indeks1][indeks2])
 
     strhasil5 = ''.join(str(x) for x in hasil)
-    # strhasil5 = [strhasil[i:i+5] for i in range(0, len(strhasil), 5)]
     for i in range (len(strhasil5)//5+1):
         strhasil5 = strhasil5[:i*6] + " " + strhasil5[i*6:]
     strhasil5 = strhasil5[1:]    
@@ -160,8 +159,6 @@ def vigeneredecryptperlima(kalimat, key):
             if (selectkalimat[i]==matriks[j][indeks2]):
                 indeks1 = j
         hasil.append(matriks[indeks1][0])
-
-    strhasil = ''.join(str(x) for x in hasil)
 
     strhasil5 = ''.join(str(x) for x in hasil)
     # strhasil5 = [strhasil[i:i+5] for i in range(0, len(strhasil), 5)]

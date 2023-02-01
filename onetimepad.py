@@ -30,7 +30,7 @@ def tonumb(text):
     return num
 
 #fungsi enkripsi otp
-def enkripotp(text,key):
+def enkripotp(text):
     text = filter(text)
     textnum = tonumb(text)
     keynum = tonumb(key)
@@ -40,8 +40,23 @@ def enkripotp(text,key):
     enkripsi = toalfa(enkripsinum)
     return enkripsi
 
+#fungsi enkripsi otp perlima
+def enkripotpperlima(text):
+    text = filter(text)
+    textnum = tonumb(text)
+    keynum = tonumb(key)
+    enkripsinum = []
+    for i in range (len(textnum)):
+        enkripsinum.append((textnum[i]+keynum[i])%26)
+    enkripsi = toalfa(enkripsinum)
+    strhasil5 = ''.join(str(x) for x in enkripsi)
+    for i in range (len(strhasil5)//5+1):
+        strhasil5 = strhasil5[:i*6] + " " + strhasil5[i*6:]
+    strhasil5 = strhasil5[1:]    
+    return strhasil5
+
 #fungsi dekripsi otp
-def dekripsiotp(text,key):
+def dekripsiotp(text):
     text = filter(text)
     keynum = tonumb(key)
     textnum = tonumb(text)
@@ -51,12 +66,27 @@ def dekripsiotp(text,key):
     dekripsi = toalfa(dekripsinum)
     return dekripsi
 
-#-----main------ enkripsi dekripsi
-text = input("Masukkan Plain Text : ")
-keynum = generatekey(text)
-key = toalfa(keynum)
-print("KeyOTP : "+key)
-enkripsi = enkripotp(text,key)
-print("Hasil Enkripsi : "+enkripsi)
-dekripsi = dekripsiotp(enkripsi,key)
-print("Hasil Dekripsi : "+dekripsi)
+#fungsi dekripsi otp perlima
+def dekripsiotpperlima(text):
+    text = filter(text)
+    keynum = tonumb(key)
+    textnum = tonumb(text)
+    dekripsinum = []
+    for i in range (len(textnum)):
+        dekripsinum.append((26+textnum[i]-keynum[i])%26)
+    dekripsi = toalfa(dekripsinum)
+    strhasil5 = ''.join(str(x) for x in dekripsi)
+    for i in range (len(strhasil5)//5+1):
+        strhasil5 = strhasil5[:i*6] + " " + strhasil5[i*6:]
+    strhasil5 = strhasil5[1:]    
+    return strhasil5
+
+# #-----main------ enkripsi dekripsi
+# text = input("Masukkan Plain Text : ")
+# keynum = generatekey(text)
+# key = toalfa(keynum)
+# print("KeyOTP : "+key)
+# enkripsi = enkripotp(text,key)
+# print("Hasil Enkripsi : "+enkripsi)
+# dekripsi = dekripsiotp(enkripsi,key)
+# print("Hasil Dekripsi : "+dekripsi)
