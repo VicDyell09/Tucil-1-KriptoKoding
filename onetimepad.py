@@ -8,9 +8,10 @@ def filter(text):
 
 #fungsi generate key dalam bentuk list angka 0-25
 def generatekey(text):
+    file = open("OTP.txt","r")
     key = []
     for char in text:
-        n = random.randint(0,25)
+        n = file.read(1)
         key.append(n)
     return key
 
@@ -33,6 +34,7 @@ def tonumb(text):
 def enkripotp(text):
     text = filter(text)
     textnum = tonumb(text)
+    key = generatekey(text)
     keynum = tonumb(key)
     enkripsinum = []
     for i in range (len(textnum)):
@@ -44,6 +46,7 @@ def enkripotp(text):
 def enkripotpperlima(text):
     text = filter(text)
     textnum = tonumb(text)
+    key = generatekey(text)
     keynum = tonumb(key)
     enkripsinum = []
     for i in range (len(textnum)):
@@ -58,6 +61,7 @@ def enkripotpperlima(text):
 #fungsi dekripsi otp
 def dekripsiotp(text):
     text = filter(text)
+    key = generatekey(text)
     keynum = tonumb(key)
     textnum = tonumb(text)
     dekripsinum = []
@@ -69,6 +73,7 @@ def dekripsiotp(text):
 #fungsi dekripsi otp perlima
 def dekripsiotpperlima(text):
     text = filter(text)
+    key = generatekey(text)
     keynum = tonumb(key)
     textnum = tonumb(text)
     dekripsinum = []
@@ -81,12 +86,9 @@ def dekripsiotpperlima(text):
     strhasil5 = strhasil5[1:]    
     return strhasil5
 
-# #-----main------ enkripsi dekripsi
+#-----main------ enkripsi dekripsi
 # text = input("Masukkan Plain Text : ")
-# keynum = generatekey(text)
-# key = toalfa(keynum)
-# print("KeyOTP : "+key)
-# enkripsi = enkripotp(text,key)
+# enkripsi = enkripotp(text)
 # print("Hasil Enkripsi : "+enkripsi)
-# dekripsi = dekripsiotp(enkripsi,key)
+# dekripsi = dekripsiotp(enkripsi)
 # print("Hasil Dekripsi : "+dekripsi)
