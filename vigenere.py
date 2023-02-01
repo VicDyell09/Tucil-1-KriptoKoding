@@ -50,6 +50,9 @@ def vigenereencrypttanpaspasi(kalimat, key):
     matriks = templatematriks()
     hasil = []
 
+    for i in range(len(selectkey)):
+        selectkey[i] = selectkey[i].lower()
+
     for i in range (len(selectkalimat)):
         indeks1 = ord(selectkalimat[i]) - 96 - 1 #indeks matriks mulai dari 0 makanya -1
         indeks2 = ord(selectkey[i]) - 96 - 1 #indeks matriks mulai dari 0 makanya -1
@@ -83,6 +86,9 @@ def vigenereencryptperlima(kalimat, key):
     matriks = templatematriks()
     hasil = []
 
+    for i in range(len(selectkey)):
+        selectkey[i] = selectkey[i].lower()
+
     for i in range (len(selectkalimat)):
         indeks1 = ord(selectkalimat[i]) - 96 - 1 #indeks matriks mulai dari 0 makanya -1
         indeks2 = ord(selectkey[i]) - 96 - 1 #indeks matriks mulai dari 0 makanya -1
@@ -97,8 +103,12 @@ def vigenereencryptperlima(kalimat, key):
 def vigeneredecrypttanpaspasi(kalimat, key):
     selectkalimat = []
     selectkey = []
+
     for i in range (len(key)):
         selectkey.append(key[i])
+
+    for i in range(len(selectkey)):
+        selectkey[i] = selectkey[i].lower()    
 
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     for i in range (len(kalimat)):
@@ -106,9 +116,6 @@ def vigeneredecrypttanpaspasi(kalimat, key):
         if (kalimat[i]) in alphabet:
             selectkalimat.append(kalimat[i])
       
-    for i in range (len(key)):
-        selectkey.append(key[i])
-
     if (len(selectkey)<len(selectkalimat)):
         for i in range(len(selectkey)+1, len(selectkalimat)+1):
             selectkey.append(selectkey[i-len(key)-1])
@@ -132,17 +139,18 @@ def vigeneredecrypttanpaspasi(kalimat, key):
 def vigeneredecryptperlima(kalimat, key):
     selectkalimat = []
     selectkey = []
+    
     for i in range (len(key)):
         selectkey.append(key[i])
+
+    for i in range(len(selectkey)):
+        selectkey[i] = selectkey[i].lower()    
 
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     for i in range (len(kalimat)):
         kalimat = kalimat.lower()
         if (kalimat[i]) in alphabet:
             selectkalimat.append(kalimat[i])
-      
-    for i in range (len(key)):
-        selectkey.append(key[i])
 
     if (len(selectkey)<len(selectkalimat)):
         for i in range(len(selectkey)+1, len(selectkalimat)+1):
