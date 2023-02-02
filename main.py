@@ -14,6 +14,7 @@ from vigenere import *
 from extendedvigenere import *
 from playfair import *
 from onetimepad import *
+from filebin import *
 
 
 class Ui_MainWindow(object):
@@ -219,9 +220,6 @@ class Ui_MainWindow(object):
         self.plainTextEdit_24 = QtWidgets.QPlainTextEdit(self.tab_12)
         self.plainTextEdit_24.setGeometry(QtCore.QRect(150, 195, 331, 41))
         self.plainTextEdit_24.setObjectName("plainTextEdit_24")
-        self.plainTextEdit_25 = QtWidgets.QPlainTextEdit(self.tab_12)
-        self.plainTextEdit_25.setGeometry(QtCore.QRect(150, 250, 331, 41))
-        self.plainTextEdit_25.setObjectName("plainTextEdit_25")
         self.pushButton_13 = QtWidgets.QPushButton(self.tab_12)
         self.pushButton_13.setGeometry(QtCore.QRect(500, 150, 75, 24))
         self.pushButton_13.setObjectName("pushButton_13")
@@ -288,9 +286,6 @@ class Ui_MainWindow(object):
         self.plainTextEdit_34 = QtWidgets.QPlainTextEdit(self.tab_15)
         self.plainTextEdit_34.setGeometry(QtCore.QRect(150, 195, 331, 41))
         self.plainTextEdit_34.setObjectName("plainTextEdit_34")
-        self.plainTextEdit_35 = QtWidgets.QPlainTextEdit(self.tab_15)
-        self.plainTextEdit_35.setGeometry(QtCore.QRect(150, 250, 331, 41))
-        self.plainTextEdit_35.setObjectName("plainTextEdit_35")
         self.pushButton_15 = QtWidgets.QPushButton(self.tab_15)
         self.pushButton_15.setGeometry(QtCore.QRect(500, 150, 75, 24))
         self.pushButton_15.setObjectName("pushButton_15")
@@ -737,14 +732,22 @@ class Ui_MainWindow(object):
         self.tabWidget_13.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.pushButton.clicked.connect(self.vigenerecipherencryptfile)
         self.pushButton_2.clicked.connect(self.vigenerecipherencrypt)
+        self.pushButton_3.clicked.connect(self.vigenerecipherdecryptfile)
         self.pushButton_4.clicked.connect(self.vigenerecipherdecrypt)
+        self.pushButton_13.clicked.connect(self.extvigenerecipherencryptfile)
         self.pushButton_14.clicked.connect(self.extvigenerecipherencrypt)
+        self.pushButton_15.clicked.connect(self.extvigenerecipherdecryptfile)
         self.pushButton_16.clicked.connect(self.extvigenerecipherdecrypt)
         
+        self.pushButton_5.clicked.connect(self.playfaircipherencryptfile)
         self.pushButton_6.clicked.connect(self.playfaircipherencrypt)
+        self.pushButton_7.clicked.connect(self.playfaircipherdecryptfile)
         self.pushButton_8.clicked.connect(self.playfaircipherdecrypt)
+        self.pushButton_9.clicked.connect(self.otpcipherencryptfile)
         self.pushButton_10.clicked.connect(self.otpcipherencrypt)
+        self.pushButton_11.clicked.connect(self.otpcipherdecryptfile)
         self.pushButton_12.clicked.connect(self.otpcipherdecrypt)
 
         self.pushButton_102.clicked.connect(self.browsevigenc)
@@ -949,7 +952,7 @@ class Ui_MainWindow(object):
         hasil1 = extvigenereencrypt(kalimat, key)
         self.plainTextEdit_26.setPlainText(kalimat)
         self.plainTextEdit_27.setPlainText(hasil1)
-        self.tulishasilketxt(hasil1)
+        writefilebin(hasil1)
             
     def extvigenerecipherdecrypt(self):
         kalimat = self.plainTextEdit_39.toPlainText()
@@ -957,7 +960,7 @@ class Ui_MainWindow(object):
         hasil1 = extvigeneredecrypt(kalimat, key)
         self.plainTextEdit_36.setPlainText(kalimat)
         self.plainTextEdit_37.setPlainText(hasil1)
-        self.tulishasilketxt(hasil1)
+        writefilebin(hasil1)
 
     def playfaircipherencrypt(self):
         kalimat = self.plainTextEdit_45.toPlainText()
@@ -996,7 +999,81 @@ class Ui_MainWindow(object):
         self.plainTextEdit_71.setPlainText(hasil1)
         self.plainTextEdit_70.setPlainText(hasil2) 
         self.tulishasilketxt(hasil1)
+    
+    def vigenerecipherencryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit.toPlainText())
+        self.plainTextEdit_3.setPlainText(kalimat)
+        key = self.plainTextEdit_2.toPlainText()
+        hasil1 = vigenereencrypttanpaspasi(kalimat, key)
+        hasil2 = vigenereencryptperlima(kalimat, key)
+        self.plainTextEdit_4.setPlainText(hasil1)
+        self.plainTextEdit_5.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
         
+    def vigenerecipherdecryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_11.toPlainText())
+        self.plainTextEdit_13.setPlainText(kalimat)
+        key = self.plainTextEdit_12.toPlainText()
+        hasil1 = vigeneredecrypttanpaspasi(kalimat, key)
+        hasil2 = vigeneredecryptperlima(kalimat, key)
+        self.plainTextEdit_14.setPlainText(hasil1)
+        self.plainTextEdit_15.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
+
+    def extvigenerecipherencryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_21.toPlainText())
+        self.plainTextEdit_23.setPlainText(kalimat)
+        key = self.plainTextEdit_22.toPlainText()
+        hasil1 = extvigenereencrypt(kalimat, key)
+        self.plainTextEdit_24.setPlainText(hasil1)
+        writefilebintofile(self.plainTextEdit_21.toPlainText(),hasil1)
+            
+    def extvigenerecipherdecryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_31.toPlainText())
+        self.plainTextEdit_33.setPlainText(kalimat)
+        key = self.plainTextEdit_32.toPlainText()
+        hasil1 = extvigeneredecrypt(kalimat, key)
+        self.plainTextEdit_34.setPlainText(hasil1)
+        writefilebintofile(self.plainTextEdit_21.toPlainText(),hasil1)
+
+    def playfaircipherencryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_41.toPlainText())
+        self.plainTextEdit_43.setPlainText(kalimat)
+        key = self.plainTextEdit_42.toPlainText()
+        hasil1 = playfairenk(kalimat,key)
+        hasil2 = playfairenkperlima(kalimat,key)
+        self.plainTextEdit_44.setPlainText(hasil1)
+        self.plainTextEdit_101.setPlainText(hasil2)
+        self.tulishasilketxt(hasil1)
+
+    def playfaircipherdecryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_49.toPlainText())
+        self.plainTextEdit_51.setPlainText(kalimat)
+        key = self.plainTextEdit_50.toPlainText()
+        hasil1 = playfairdek(kalimat,key)
+        hasil2 = playfairdekperlima(kalimat,key)
+        self.plainTextEdit_52.setPlainText(hasil1)
+        self.plainTextEdit_103.setPlainText(hasil2)   
+        self.tulishasilketxt(hasil1)
+
+    def otpcipherencryptfile(self):
+        kalimat = readfilebin(self.plainTextEdit_57.toPlainText())
+        self.plainTextEdit_58.setPlainText(kalimat)
+        hasil1 = enkripotp(kalimat)
+        hasil2 = enkripotpperlima(kalimat)
+        self.plainTextEdit_59.setPlainText(hasil1)
+        self.plainTextEdit_60.setPlainText(hasil2) 
+        self.tulishasilketxt(hasil1)
+
+    def otpcipherdecryptfile(self):         
+        kalimat = readfilebin(self.plainTextEdit_68.toPlainText())
+        self.plainTextEdit_67.setPlainText(kalimat)
+        hasil1 = dekripsiotp(kalimat)
+        hasil2 = dekripsiotpperlima(kalimat)
+        self.plainTextEdit_65.setPlainText(hasil1)
+        self.plainTextEdit_66.setPlainText(hasil2) 
+        self.tulishasilketxt(hasil1)
+
     def tulishasilketxt(self, kalimat):
         with open("hasil.txt", "a") as f:
             f.writelines(kalimat)
