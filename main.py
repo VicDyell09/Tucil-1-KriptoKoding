@@ -748,6 +748,13 @@ class Ui_MainWindow(object):
         self.pushButton_12.clicked.connect(self.otpcipherdecrypt)
 
         self.pushButton_102.clicked.connect(self.browsevigenc)
+        self.pushButton_101.clicked.connect(self.browsevigdec)
+        self.pushButton_100.clicked.connect(self.browseextvigenc)
+        self.pushButton_103.clicked.connect(self.browseextvigdec)
+        self.pushButton_104.clicked.connect(self.browsefairenc)
+        self.pushButton_105.clicked.connect(self.browsefairdec)
+        self.pushButton_106.clicked.connect(self.browseotpenc)
+        self.pushButton_107.clicked.connect(self.browseotpdec)
 
 
         font = QtGui.QFont()
@@ -779,7 +786,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_2.setText(_translate("MainWindow", "Nama File"))
+        self.label_2.setText(_translate("MainWindow", "File"))
         self.label_3.setText(_translate("MainWindow", "Key"))
         self.label_4.setText(_translate("MainWindow", "Ciphertext"))
         self.label_5.setText(_translate("MainWindow", "Plaintext"))
@@ -792,7 +799,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Execute"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_8), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_5), _translate("MainWindow", "Encrypt"))
-        self.label_10.setText(_translate("MainWindow", "Nama File"))
+        self.label_10.setText(_translate("MainWindow", "File"))
         self.label_11.setText(_translate("MainWindow", "Key"))
         self.label_12.setText(_translate("MainWindow", "Ciphertext"))
         self.label_13.setText(_translate("MainWindow", "Plaintext"))
@@ -806,7 +813,7 @@ class Ui_MainWindow(object):
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_10), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_6), _translate("MainWindow", "Decrypt"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Vigenere"))
-        self.label_18.setText(_translate("MainWindow", "Nama File"))
+        self.label_18.setText(_translate("MainWindow", "File"))
         self.label_19.setText(_translate("MainWindow", "Key"))
         self.label_20.setText(_translate("MainWindow", "Ciphertext"))
         self.label_21.setText(_translate("MainWindow", "Plaintext"))
@@ -819,7 +826,7 @@ class Ui_MainWindow(object):
         self.pushButton_14.setText(_translate("MainWindow", "Execute"))
         self.tabWidget_6.setTabText(self.tabWidget_6.indexOf(self.tab_13), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_5.setTabText(self.tabWidget_5.indexOf(self.tab_11), _translate("MainWindow", "Encrypt"))
-        self.label_26.setText(_translate("MainWindow", "Nama File"))
+        self.label_26.setText(_translate("MainWindow", "File"))
         self.label_27.setText(_translate("MainWindow", "Key"))
         self.label_28.setText(_translate("MainWindow", "Ciphertext"))
         self.label_29.setText(_translate("MainWindow", "Plaintext"))
@@ -833,7 +840,7 @@ class Ui_MainWindow(object):
         self.tabWidget_7.setTabText(self.tabWidget_7.indexOf(self.tab_16), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_5.setTabText(self.tabWidget_5.indexOf(self.tab_14), _translate("MainWindow", "Decrypt"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Extended Vigenere"))
-        self.label_34.setText(_translate("MainWindow", "Nama File"))
+        self.label_34.setText(_translate("MainWindow", "File"))
         self.label_36.setText(_translate("MainWindow", "Ciphertext"))
         self.label_37.setText(_translate("MainWindow", "Plaintext"))
         self.pushButton_5.setText(_translate("MainWindow", "Execute"))
@@ -845,7 +852,7 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(_translate("MainWindow", "Execute"))
         self.tabWidget_9.setTabText(self.tabWidget_9.indexOf(self.tab_19), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_8.setTabText(self.tabWidget_8.indexOf(self.tab_17), _translate("MainWindow", "Encrypt"))
-        self.label_40.setText(_translate("MainWindow", "Nama File"))
+        self.label_40.setText(_translate("MainWindow", "File"))
         self.label_41.setText(_translate("MainWindow", "Plaintext"))
         self.label_42.setText(_translate("MainWindow", "Ciphertext"))
         self.label_101.setText(_translate("MainWindow", "Key"))
@@ -859,7 +866,7 @@ class Ui_MainWindow(object):
         self.tabWidget_10.setTabText(self.tabWidget_10.indexOf(self.tab_22), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_8.setTabText(self.tabWidget_8.indexOf(self.tab_20), _translate("MainWindow", "Decrypt"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "Playfair"))
-        self.label_46.setText(_translate("MainWindow", "Nama File"))
+        self.label_46.setText(_translate("MainWindow", "File"))
         self.label_47.setText(_translate("MainWindow", "Ciphertext"))
         self.label_48.setText(_translate("MainWindow", "Plaintext"))
         self.label_103.setText(_translate("MainWindow", "Key"))
@@ -872,7 +879,7 @@ class Ui_MainWindow(object):
         self.pushButton_10.setText(_translate("MainWindow", "Execute"))
         self.tabWidget_12.setTabText(self.tabWidget_12.indexOf(self.tab_25), _translate("MainWindow", "Input Keyboard"))
         self.tabWidget_11.setTabText(self.tabWidget_11.indexOf(self.tab_23), _translate("MainWindow", "Encrypt"))
-        self.label_52.setText(_translate("MainWindow", "Nama File"))
+        self.label_52.setText(_translate("MainWindow", "File"))
         self.label_53.setText(_translate("MainWindow", "Plaintext"))
         self.label_54.setText(_translate("MainWindow", "Ciphertext"))
         self.pushButton_11.setText(_translate("MainWindow", "Execute"))
@@ -995,18 +1002,39 @@ class Ui_MainWindow(object):
             f.writelines(kalimat)
             f.write("\n")
 
-    # def clicker(self):
-    #     fname = QFileDialog.getOpenFileName(
-    #         parent = MainWindow, 
-    #         caption = "Open File",
-    #         directory = "", 
-    #         filter = "All Files (*)")
-    #     if fname:
-    #         return fname
+    def clicker(self):
+        fname = QFileDialog.getOpenFileName(
+            parent = MainWindow, 
+            caption = "Open File",
+            directory = "", 
+            filter = "All Files (*)")
+        if fname:
+            return fname[0]
 
-    # def browsevigenc(self):
-    #     link = self.clicker()
-    #     self.plainTextEdit.setPlainText(link)
+    def browsevigenc(self):
+        link = self.clicker()
+        self.plainTextEdit.setPlainText(link)
+    def browsevigdec(self):
+        link = self.clicker()
+        self.plainTextEdit_11.setPlainText(link)
+    def browseextvigenc(self):
+        link = self.clicker()
+        self.plainTextEdit_21.setPlainText(link)
+    def browseextvigdec(self):
+        link = self.clicker()
+        self.plainTextEdit_31.setPlainText(link)
+    def browsefairenc(self):
+        link = self.clicker()
+        self.plainTextEdit_41.setPlainText(link)
+    def browsefairdec(self):
+        link = self.clicker()
+        self.plainTextEdit_49.setPlainText(link)
+    def browseotpenc(self):
+        link = self.clicker()
+        self.plainTextEdit_57.setPlainText(link)
+    def browseotpdec(self):
+        link = self.clicker()
+        self.plainTextEdit_68.setPlainText(link)
         
 
 if __name__ == "__main__":
