@@ -10,16 +10,16 @@
 git clone https://github.com/VicDyell09/Tucil-1-KriptoKoding.git
 ```
 - Masuk ke directory
-![Alt text](img\Directory.png)
+![Directory](/img/Directory.png)
 - Masuk ke folder tucil
-![Alt text](img\FolderTucil.png)
+![Folder Tucil](/img/FolderTucil.png)
 - Masuk ke folder dist
-![Alt text](img\FolderDist.png)
+![Folder Dist](/img/FolderDist.png)
 - Jalankan Main.exe
-![Alt text](img\Runmain.png)
+![Run Main](/img/Runmain.png)
 - Tunggu sesaat sampai program berhasil dieksekusi
-![Alt text](img\Mainexe.png)
+![Main.exe](/img/Mainexe.png)
 - Program siap digunakan
-![Alt text](img\Program.png)
+![Program](/img/Program.png)
 
 
