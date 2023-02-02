@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QFileDialog
 from vigenere import *
 from extendedvigenere import *
 from playfair import *
@@ -699,8 +700,8 @@ class Ui_MainWindow(object):
         self.pushButton_106 = QtWidgets.QPushButton(self.tab_24) #otp encrypt
         self.pushButton_106.setGeometry(QtCore.QRect(490, 46, 70, 31))
         self.pushButton_106.setObjectName("pushButton_106")
-        self.pushButton_107 = QtWidgets.QPushButton(self.tab_26) #otp decrypt
-        self.pushButton_107.setGeometry(QtCore.QRect(532, 89, 70, 31))
+        self.pushButton_107 = QtWidgets.QPushButton(self.tab_27) #otp decrypt
+        self.pushButton_107.setGeometry(QtCore.QRect(490, 46, 70, 31))
         self.pushButton_107.setObjectName("pushButton_107")
 
         font = QtGui.QFont()
@@ -745,6 +746,9 @@ class Ui_MainWindow(object):
         self.pushButton_8.clicked.connect(self.playfaircipherdecrypt)
         self.pushButton_10.clicked.connect(self.otpcipherencrypt)
         self.pushButton_12.clicked.connect(self.otpcipherdecrypt)
+
+        self.pushButton_102.clicked.connect(self.browsevigenc)
+
 
         font = QtGui.QFont()
         font.setFamily("Sitka Small")
@@ -990,6 +994,20 @@ class Ui_MainWindow(object):
         with open("hasil.txt", "a") as f:
             f.writelines(kalimat)
             f.write("\n")
+
+    # def clicker(self):
+    #     fname = QFileDialog.getOpenFileName(
+    #         parent = MainWindow, 
+    #         caption = "Open File",
+    #         directory = "", 
+    #         filter = "All Files (*)")
+    #     if fname:
+    #         return fname
+
+    # def browsevigenc(self):
+    #     link = self.clicker()
+    #     self.plainTextEdit.setPlainText(link)
+        
 
 if __name__ == "__main__":
     import sys
