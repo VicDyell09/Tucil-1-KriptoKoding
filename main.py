@@ -678,6 +678,31 @@ class Ui_MainWindow(object):
         self.label_219.setGeometry(QtCore.QRect(490, 44, 101, 31))
         self.label_219.setObjectName("label_219")
 
+        self.pushButton_100 = QtWidgets.QPushButton(self.tab_12) #ext vigenere encrypt
+        self.pushButton_100.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_100.setObjectName("pushButton_100")
+        self.pushButton_101 = QtWidgets.QPushButton(self.tab_9) #vigenere decrypt
+        self.pushButton_101.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_101.setObjectName("pushButton_101")
+        self.pushButton_102 = QtWidgets.QPushButton(self.tab_7) #vigenere encrypt
+        self.pushButton_102.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_102.setObjectName("pushButton_102")
+        self.pushButton_103 = QtWidgets.QPushButton(self.tab_15) #ext vigenere decrypt
+        self.pushButton_103.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_103.setObjectName("pushButton_103")
+        self.pushButton_104 = QtWidgets.QPushButton(self.tab_18) #playfair encrypt
+        self.pushButton_104.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_104.setObjectName("pushButton_104")
+        self.pushButton_105 = QtWidgets.QPushButton(self.tab_21) #playfair decrypt
+        self.pushButton_105.setGeometry(QtCore.QRect(490, 33, 70, 31))
+        self.pushButton_105.setObjectName("pushButton_105")
+        self.pushButton_106 = QtWidgets.QPushButton(self.tab_24) #otp encrypt
+        self.pushButton_106.setGeometry(QtCore.QRect(490, 46, 70, 31))
+        self.pushButton_106.setObjectName("pushButton_106")
+        self.pushButton_107 = QtWidgets.QPushButton(self.tab_26) #otp decrypt
+        self.pushButton_107.setGeometry(QtCore.QRect(532, 89, 70, 31))
+        self.pushButton_107.setObjectName("pushButton_107")
+
         font = QtGui.QFont()
         font.setFamily("Sitka Small")
         font.setPointSize(10)
@@ -877,6 +902,15 @@ class Ui_MainWindow(object):
         self.label_217.setText(_translate("MainWindow", "(isi disini)"))
         self.label_218.setText(_translate("MainWindow", "(isi disini)"))
         self.label_219.setText(_translate("MainWindow", "(isi disini)"))
+
+        self.pushButton_100.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_101.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_102.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_103.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_104.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_105.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_106.setText(_translate("MainWindow", "Browse"))
+        self.pushButton_107.setText(_translate("MainWindow", "Browse"))
 
     def vigenerecipherencrypt(self):
         kalimat = self.plainTextEdit_9.toPlainText()
